@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+int a1[50],a2[50],siz1,siz2,i,k,merge[100];
+printf("enter the arr1 size");
+scanf("%d",&siz1);
+printf("enter the elements in a1");
+for(i=0;i<siz1;i++)
+{
+scanf("%d",&a1[i]);
+merge[i]=a1[i];
+}
+k=i;
+printf("\nenter the size of a2");
+scanf("%d",&siz2);
+printf("enter the elements in a2");
+for(i=0;i<siz2;i++)
+{
+scanf("%d",&a2[i]);
+merge[k]=a2[i];
+k++;
+}
+printf("\nafter merging the elemnts are:\n");
+for(i=0;i<k;i++)
+printf("%d\n",merge[i]);
+}
