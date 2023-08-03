@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int n1=0,n2=1,range,n3,sum=0;
+printf("enter the range of the series");
+scanf("%d",&range);
+printf("the fibonacci series is:");
+while(n1<=range)
+{
+printf("%d",n1);
+sum=sum+n1;
+n3=n1+n2;
+n1=n2;
+n2=n3;
+}
+printf("the sum is=%d",sum);
+}
