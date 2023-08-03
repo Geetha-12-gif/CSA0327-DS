@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int arr[]={4,4,5,5,66,7,7,6,6,88,88};
+int i,j;
+int length=sizeof(arr)/sizeof(arr[0]);
+printf("duplicate elements in array is:");
+for(i=0;i<length;i++)
+{
+for(j=i+1;j<length;j++)
+{
+if (arr[i]==arr[j])
+printf("%d",arr[j]);
+}
+}
+}
