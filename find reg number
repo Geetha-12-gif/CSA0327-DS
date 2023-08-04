@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+int regnumber[]={1234,5678,3746,9872};
+int targetregnumber=1234;
+int size=sizeof(regnumber)/sizeof(regnumber[0]);
+int found=0,i;
+for(i=0;i<size;i++)
+{
+if(regnumber[i]==targetregnumber)
+{
+found=1;
+break;
+}
+}
+if(found)
+{
+printf("registration number %d found \n",targetregnumber);
+}
+else
+{
+printf("registration number %d is not found\n",targetregnumber);
+}
+}
